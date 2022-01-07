@@ -52,7 +52,7 @@ function App() {
 
   //1. state management for connect + eager connection + load public key ON refresh
   useEffect(() => {
-    window.solana.connect({ onlyIfTrusted: true })
+    window.solana?.connect({ onlyIfTrusted: true })
         .then(({ publicKey }) => {
 
         })
