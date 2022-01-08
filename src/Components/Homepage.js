@@ -23,7 +23,7 @@ export default function Homepage({Log,Login,getProvider,isphantomInstalled,conne
                     <p className='Homepage_introduction_paragraph'>Embrace the whole new world of streamlined health, with JCARE's incentive structure</p>
                     <a className = 'Homepage_choices_hyperlink' target ='_blank' href='https://donovan-ng.gitbook.io/jcare/jcare'><button className='Homepage_introduction_button'>Read more</button></a>
                 </div>
-                <img className = 'Homepage_introduction_image'src={Fruits} height ='266.2' width ='543.4'/>
+                <img className = 'Homepage_introduction_image'src={Fruits}/>
                 </div>
             <div>
                 <h1 className='Homepage_choices_title'>Find out more about JCARE</h1>
@@ -48,7 +48,7 @@ export default function Homepage({Log,Login,getProvider,isphantomInstalled,conne
             <div className='Homepage_phantom'>
                 <h1 className='Homepage_phantom_header'>The best place to manage your tokens</h1>
                     <div className='Homepage_phantom_text'>
-                        <img className ='Homepage_phantom_text_image'src={Pimage} height='350' width='400'/>
+                        <img className ='Homepage_phantom_text_image'src={Pimage} />
                             <div className='Homepage_phantom_text_paragraph'>
                                 <p>The phantom wallet connects you directly with the solana blockchain, built on the concept of having a reliable and effective wallet</p>
                                     <button className ='Homepage_phantom_text_button'onClick={()=>getProvider()}>Install</button>
