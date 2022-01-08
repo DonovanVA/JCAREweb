@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   font-family: sans-serif;
+  width:100%;
 }
 
 .App_background{

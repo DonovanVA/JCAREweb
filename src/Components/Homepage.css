@@ -45,9 +45,11 @@
     flex-direction: column;
 }
 .Homepage_introduction_image{
- margin-left: 300px;
- margin-right: 100px;
- margin-top: 150px;
+    margin-left: 300px;
+    margin-right: 100px;
+    margin-top: 150px;
+    height: 266.2px;
+    width: 542.4px;
 }
 .Homepage_choices{
     display: flex;
@@ -217,4 +219,245 @@
 
 .Homepage_phantom_text_button:hover{
     cursor:pointer;
+}
+
+@media screen and (max-width:950px){
+
+    .Homepage{
+        background-color: rgb(184, 184, 217);
+        height: 2500px;
+        
+    }
+    
+    .Homepage_text{
+        text-align: center;
+        margin-top:1px;
+    }
+    .Homepage_introduction{
+        background-color: beige;
+        height:700px;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        text-align: center;
+        align-items: center;
+    }
+    .Homepage_introduction_text{
+       margin-left:30px;
+       margin-top: 30px;
+       font-size: 12px;
+    }
+    .Homepage_introduction_paragraph{
+        margin-left: 30px;
+        font-size: 18px;
+    }
+    .Homepage_introduction_button{
+        margin-left: 30px;
+        font-size: 12px;
+        width:50px;
+        border-radius: 50px;
+        background-color: yellow;
+        font-weight: 1500;
+        border-color: transparent;
+        margin-bottom: 0px;
+    }
+    
+    .Homepage_introduction_button:hover{
+        background-color: rgb(156, 203, 60);
+        cursor:pointer;
+    }
+    
+    .Homepage_introduction_text_info{
+        display: flex;
+        flex-direction: column;
+    }
+    .Homepage_introduction_image{
+        margin-left: 100px;
+        height: 181px;
+        width: 350px;
+        margin-top:0px;
+       }
+   
+    .Homepage_choices{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-bottom: 20px;
+        height:1200px;
+        
+    }
+    .Homepage_choices_hyperlink{
+        text-decoration: none;
+        color:black;
+    }
+    .Homepage_choices_hyperlink:hover{
+        cursor:pointer;
+    }
+    .Homepage_choices_title{
+        text-align: center;
+        font-size: 30px;
+        margin-top:30px;
+        margin-bottom: 0px;
+    }
+    .Homepage_choices_container{
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+        box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+        border-color: grey;
+        border-radius: 25px;
+        margin-top: 10px;
+        height:300px;
+        width:350px;
+        box-sizing:border-box;
+        background-color: white;
+        border:1px solid grey
+    }
+    .Homepage_choices_container:hover{
+        cursor:pointer;
+    }
+    .Homepage_choices_icons{
+        font-size:15px;
+        margin-top:10px;
+        
+    }
+    .Homepage_choices_header{
+        background-color: white;
+        font-size: 30px;
+        margin-bottom: 0px;
+    }
+    .Homepage_choices_content1{
+        border-color: grey;
+        background-color: rgb(148, 148, 216);
+        height:70px;
+        width:346px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .Homepage_choices_content2{
+        border-color: grey;
+        background-color: rgb(219, 219, 157);
+        height:70px;
+        width:346px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+    
+    .Homepage_choices_content3{
+        border-color: grey;
+        background-color: rgb(12, 170, 65);
+        height:70px;
+        width:346px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .Homepage_choices_contents{
+        text-align: center;
+        margin:0px;
+    }
+    
+    .Homepage_choices_button{
+        background-color: transparent;
+        color:rgb(99, 99, 212);
+        margin:10px;
+        border-color: transparent;
+        font-weight: 700;
+    }
+    
+    .Homepage_choices_button:hover{
+        cursor:pointer;
+    }
+    
+    .Homepage_Statistics{
+        background-color: black;
+        color:white;
+        display:flex;
+        justify-content: space-evenly;
+        margin-top: 0px;
+        text-align: center;
+        height:100px;
+        
+    }
+    .Homepage_Statistics_header{
+        font-size: 20px;
+        font-weight: 300;
+        margin-top:30px;
+        margin-bottom: 10px;
+    }
+    .Homepage_Statistics_value{
+        margin-top:0px;
+        font-size: 12px;
+    }
+    .Homepage_phantom{
+        background-color: blue;
+        height:1000px;
+        display:flex;
+        flex-direction: column;
+        margin-left: 0px;
+        text-align: center;
+        align-items:  left;
+    }
+    
+    .Homepage_phantom_header{
+        color:white;
+        text-align: center;
+        font-weight: 900;
+        font-size: 30px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .Homepage_phantom_text{
+        display:flex;
+        flex-direction:column;
+        justify-content: space-evenly;
+        margin-left: 0px;
+        align-items: center;
+    }
+    .Homepage_phantom_text_paragraph{
+        color:white;
+        display:flex;
+        flex-direction: column;
+        margin-right:0px;
+        font-size: 18px;
+        margin-left: 0px;
+        margin-top: 0px;
+        font-weight:200;
+        
+    
+    }
+    .Homepage_phantom_text_image{
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        height:300px;
+        width:290px;
+        margin-right: 90px;
+        
+    }
+    .Homepage_phantom_text_button{
+        width:120px;
+        background-color: transparent;
+        box-sizing: border-box;
+        color:white;
+        font-size:30px;
+        border:1px solid white;
+        border-radius: 5px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+        margin-left: 10px;
+        
+    }
+    
+    .Homepage_phantom_text_button:hover{
+        cursor:pointer;
+    }
+
+    
 }
