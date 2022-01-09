@@ -125,6 +125,7 @@
     padding: 0px;
     font-weight: 900;
     display:none;
+    background-color: rgb(176, 157, 157);
     
 }
 .Background_bar_item:hover{
