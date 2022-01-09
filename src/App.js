@@ -15,7 +15,7 @@ function App() {
   const solanaWeb3 = require('@solana/web3.js');
   console.log(solanaWeb3);
   let connection = new solanaWeb3.Connection(solanaWeb3.clusterApiUrl('devnet'), 'confirmed');
-// After Connecting
+//After Connecting
   
   const[Log,Login] = useState(false);
   const [connectstate,setconnectstate] = useState(false)
