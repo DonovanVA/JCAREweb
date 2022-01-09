@@ -5,7 +5,7 @@ import * as AiIcons from 'react-icons/ai'
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import { IconContext } from 'react-icons';
-export default function Background({Log,Login,getProvider,isPhantomInstalled, Walletconnect, Walletdisconnect,connectstate,getwallethandler}) {
+export default function Background({getProvider, Walletdisconnect,connectstate}) {
   const [sidebar, setSidebar] = useState(false);
 
   const showSidebar = () => setSidebar(!sidebar);
@@ -32,13 +32,14 @@ export default function Background({Log,Login,getProvider,isPhantomInstalled, Wa
               <a target ='_blank' href='https://donovan-ng.gitbook.io/jcare/'><button className= "Background_bar_item">Whitepaper</button></a>
               <Link to ={'FAQ'}><button className= "Background_bar_item">FAQ</button></Link>
               <Link to ={'/Developers'}><button className= "Background_bar_item">Developers</button></Link>
+              {connectstate?<Link to ={'/Account'}><button className='Background_bar_item'>Account</button></Link>:<></>}
               {connectstate? 
               <>
                 <Link to ='/Account' className = 'Background_icon2'><FaIcons.FaPortrait></FaIcons.FaPortrait></Link>
                 <button className='Background_bar_item'onClick={()=>Walletdisconnect()}>Disconnect</button>
               </>:
               <>
-                <button className ="Background_bar_item" onClick={()=>getwallethandler()}>Connect</button>
+                <button className ="Background_bar_item" onClick={()=>getProvider()}>Connect</button>
               </>
       }
             </ul>
@@ -49,7 +50,7 @@ export default function Background({Log,Login,getProvider,isPhantomInstalled, Wa
         {connectstate? <><Link to ='/Account' className = 'Background_icon2'><FaIcons.FaPortrait></FaIcons.FaPortrait></Link>
           <button className='Background_button2'onClick={()=>Walletdisconnect()}>Disconnect</button></>:
           <>
-            <button className ="Background_button1" onClick={()=>getwallethandler()}>Connect</button>
+            <button className ="Background_button1  " onClick={()=>getProvider()}>Connect</button>
           </>
       }
       </div>
