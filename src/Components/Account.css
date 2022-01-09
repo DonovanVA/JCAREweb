@@ -7,7 +7,7 @@
 
 .Account_details{
     border: 1px solid grey;
-    height:400px;
+    height:600px;
     width:400px;
     margin-top: 100px;
     text-align: center;
@@ -18,9 +18,9 @@
 .Account_details_publickey{
     font-size: 14px;
     border-radius: 50px;
-    background-color: grey;
-    width:200px;
-    margin-top: 20px;
+    background-color: rgb(209, 191, 191);
+    width:370px;
+    margin-top: 10px;
     text-align: center;
     
 }

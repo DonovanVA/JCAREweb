@@ -6,7 +6,7 @@ import Statistics from '../DATA/Statistics';
 import Fruits from '../Images/Fruits.png';
 //Title = 40px
 //para = 30px
-export default function Homepage({Log,Login,getProvider,isphantomInstalled,connectstate}) {
+export default function Homepage({getPhantom}) {
     return (
         <div className ='Homepage'>
             {Statistics.map((s)=>{
@@ -51,7 +51,7 @@ export default function Homepage({Log,Login,getProvider,isphantomInstalled,conne
                         <img className ='Homepage_phantom_text_image'src={Pimage} />
                             <div className='Homepage_phantom_text_paragraph'>
                                 <p>The phantom wallet connects you directly with the solana blockchain, built on the concept of having a reliable and effective wallet</p>
-                                    <button className ='Homepage_phantom_text_button'onClick={()=>getProvider()}>Install</button>
+                                    <button className ='Homepage_phantom_text_button'onClick={()=>getPhantom()}>Install</button>
                             </div>
                     </div>
             </div>
