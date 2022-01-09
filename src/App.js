@@ -52,6 +52,7 @@ function App() {
 
   //1. state management for connect + eager connection + load public key ON refresh
   useEffect(() => {
+    if('solana' in window){
     window.solana.connect({ onlyIfTrusted: true })
         .then(({ publicKey }) => {
 
@@ -61,7 +62,7 @@ function App() {
           console.log('failed to load publickey!')
             // Handle connection failure as usual
         })
-
+      }
     window.solana?.on("connect", () => {
       setconnectstate(true);
     });
