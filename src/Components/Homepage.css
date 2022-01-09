@@ -221,7 +221,7 @@
     cursor:pointer;
 }
 
-@media screen and (max-width:950px){
+@media screen and (max-width:1100px){
 
     .Homepage{
         background-color: rgb(184, 184, 217);
@@ -245,16 +245,16 @@
     .Homepage_introduction_text{
        margin-left:30px;
        margin-top: 30px;
-       font-size: 12px;
+       font-size: 40px;
     }
     .Homepage_introduction_paragraph{
         margin-left: 30px;
-        font-size: 18px;
+        font-size: 25px;
     }
     .Homepage_introduction_button{
         margin-left: 30px;
-        font-size: 12px;
-        width:50px;
+        font-size: 20px;
+        width:90px;
         border-radius: 50px;
         background-color: yellow;
         font-weight: 1500;
@@ -296,7 +296,7 @@
     }
     .Homepage_choices_title{
         text-align: center;
-        font-size: 30px;
+        font-size: 40px;
         margin-top:30px;
         margin-bottom: 0px;
     }
@@ -318,7 +318,7 @@
         cursor:pointer;
     }
     .Homepage_choices_icons{
-        font-size:15px;
+        font-size:25px;
         margin-top:10px;
         
     }
@@ -412,7 +412,7 @@
         color:white;
         text-align: center;
         font-weight: 900;
-        font-size: 30px;
+        font-size: 40px;
         margin-top: 30px;
         margin-bottom: 30px;
     }
@@ -428,7 +428,7 @@
         display:flex;
         flex-direction: column;
         margin-right:0px;
-        font-size: 18px;
+        font-size: 25px;
         margin-left: 0px;
         margin-top: 0px;
         font-weight:200;

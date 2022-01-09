@@ -53,7 +53,7 @@
 .Background_icon2{
     color:white;
     font-size: 50px;
-    margin-left: 35%;
+    margin-left: 27%;
     margin-top: 10px;
 }
 .Background_icon2:hover{
@@ -99,7 +99,42 @@
     cursor: pointer;
 }
 
-@media screen and (max-width:950px){
+.Background_bar{
+    font-size: 2rem;
+    color:white;
+    display: none;
+    
+}
+.Background_bar:hover{
+    background-color: turquoise;
+}
+.Background_bar_container{
+    top:-100%;
+    
+}
+.Background_bar_container.active{
+    top:0;
+    
+}
+.Background_bar_item{
+    font-size:20px;
+    height:50px;
+    width:130px;
+    border-color: transparent;
+    padding: 0px;
+    font-weight: 900;
+    display:none;
+}
+.Background_bar_item:hover{
+    background-color: turquoise;
+    
+}
+.Background_bar_list{
+    display:flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width:500px){
     .Background{
         display:flex;
         flex-direction: row;
@@ -121,27 +156,86 @@
         height:40px;
         border-color: transparent;
         font-weight: 100;
+        
     
     }
     .Background_nav{
+        display:none
+    }
+    
+    
+    .Background_textheader:hover{
+        cursor:pointer;
+    }
+    .Background_icon1{
         color:white;
-        margin-left: 4px;
+        font-size:30px;
+        margin-top: 20px;
+        margin-left: 10px;
+        
+    }
+    .Background_icon2{
+        color:white;
+        font-size: 20px;
+        margin-left: 10px;
+        margin-top: 25px;
+        display: none;
+    }
+    .Background_icon2:hover{
+        cursor:pointer;
+    }
+    .Background_button1{
+        display:none;
+        border-radius:3px;
+    }
+    
+    .Background_button2{
+        display:none;
+    }
+    .Background_bar{
+        display: block;
+        margin-left: 220px;
+        margin-top: 20px;
+    }
+    .Background_bar_item{
+        display:block;
+    }
+    .Background_bar_list{
+        margin-left: 103px;
+    }
+    
+
+}
+@media screen and (max-width:1270px) and (min-width:501px){
+    .Background{
+        display:flex;
+        flex-direction: row;
+        position:fixed;
+        top:0;
+        width:100%;
+        height:75px;
+        background-color: rgb(172, 169, 176);
+    }
+    
+    .Background_textheader{
+        color:white;
+        margin-left:5px;
         height:30px;
-        margin-top:40px;
+        margin-top: 15px;
         background-color:transparent;
         padding: 0px;
-        font-size: 12px;
+        font-size: 20px;
         height:40px;
         border-color: transparent;
         font-weight: 100;
-        text-decoration: none;
+        
+    
+    }
+    .Background_nav{
+        display:none
     }
     
-    .Background_nav:hover{
-        cursor: pointer;
-        color: black;
-        transition: 1s;
-    }
+    
     .Background_textheader:hover{
         cursor:pointer;
     }
@@ -157,48 +251,25 @@
         font-size: 20px;
         margin-left: 10px;
         margin-top: 50px;
+        display: none;
     }
     .Background_icon2:hover{
         cursor:pointer;
     }
     .Background_button1{
-        color:white;
-        margin-left: 5%;
-        height:30px;
-        margin-top:47px;
-        background-color:transparent;
-        padding: 0px;
-        font-size: 12px;
-        height:25px;
-        border-color: transparent;
-        font-weight: 100;
-        border:1px solid white;
-        
-        width: 70px;
+        display:none;
         border-radius:3px;
     }
-    .Background_button1:hover{
-        background-color: white;
-        color:black;
-        transition: 1s;
-        cursor:pointer;
-    }
-    .Background_button2{
-        color:white;
-        margin-left: 1px;
-        height:30px;
-        margin-top:40px;
-        background-color:transparent;
-        padding: 0px;
-        font-size: 12px;
-        height:40px;
-        border-color: transparent;
-        font-weight: 100;
-    }
     
-    .Background_button2:hover{
-        text-decoration: underline;
-        cursor: pointer;
+    .Background_button2{
+        display:none;
     }
-
+    .Background_bar{
+        display:block;
+        margin-left: 350px;
+        margin-top: 20px;
+    }
+    .Background_bar_item{
+        display:block;
+    }
 }
