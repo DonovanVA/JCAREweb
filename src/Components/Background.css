@@ -196,14 +196,14 @@
     }
     .Background_bar{
         display: block;
-        margin-left: 220px;
+        margin-left: 210px;
         margin-top: 20px;
     }
     .Background_bar_item{
         display:block;
     }
     .Background_bar_list{
-        margin-left: 180px;
+        margin-left: 80px;
     }
     
 
